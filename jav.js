@@ -2,7 +2,7 @@ let hour = document.querySelector('.hour');
 let minute = document.querySelector('.minute');
 let second = document.querySelector('.second');
 let tens = document.querySelector('.tens');
-let buttons = document.querySelectorAll('button');
+
 
 let startTime = 0;
 let elapsedTime = 0;
@@ -75,7 +75,7 @@ function reset(event){
     second.innerHTML = '00';
     tens.innerHTML = '00';
 }
-
-buttons.forEach(function(button){
+document
+    .querySelectorAll('button').forEach(function(button){
     button.addEventListener('click', function(event){
     buttonClick(event.target.innerText)})}); 
