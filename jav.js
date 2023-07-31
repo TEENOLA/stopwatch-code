@@ -76,4 +76,6 @@ function reset(event){
     tens.innerHTML = '00';
 }
 
-buttons.forEach(button => button.addEventListener('click', function(event){buttonClick(event.target.innerText)}));
+buttons.forEach(function(button){
+    button.addEventListener('click', function(event){
+    buttonClick(event.target.innerText)})}); 
